@@ -1,0 +1,205 @@
+.navbar {
+  height: 72px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  .profile-name-card {
+    background-color: #d8d8d8;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .TextLogo {
+    color: rgb(151, 154, 155);
+    font-size: 30px;
+  }
+  .profileTextLogo {
+    color: rgb(151, 154, 155);
+    font-size: 20px;
+  }
+  .burgerIcon {
+    width: 25px;
+    height: 25px;
+    object-fit: scale-down;
+    cursor: pointer;
+    transform: translateY(11px);
+  }
+  .positionSearch {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    color: rgb(135, 136, 137);
+    font-size: 20px;
+  }
+  .positionClearIcon {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    color: rgb(135, 136, 137);
+    font-size: 20px;
+  }
+  .profileBtn {
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid #dadce0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    // max-height: 48px;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+    min-width: 160px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    .profileRound {
+      width: 30px;
+      height: 30px;
+      border-radius: 70%;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .userLogoName {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+  .logoutModal {
+    border-radius: 16px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+      0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    width: 100%;
+    max-width: 300px;
+    .profileNmaeClass {
+      color: rgb(39, 38, 38);
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .engineNameClass {
+      color: rgb(151, 154, 155);
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .welcomeNameClass {
+      color: rgb(151, 154, 155);
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .positionModalClose {
+      position: absolute;
+      right: 10px;
+    }
+    .logoutIcon{
+      color: rgb(151, 154, 155);
+      font-size: 20px;
+    }
+    .profileRoundNew {
+      width: 70px;
+      height: 70px;
+      border-radius: 70%;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .userLogoNameNew {
+        font-size: 36px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.profile-dropdown {
+  position: relative;
+  .down-icon {
+    font-size: 6px;
+  }
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    // z-index: 9;
+    min-width: 225px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    display: none;
+    font-weight: 500;
+    &.active {
+      color: #fff;
+      font-size: fontSize(16px);
+      display: block;
+    }
+    li {
+      padding: 6px 0;
+      color: #fff;
+      list-style: none;
+      font-size: fontSize(16px);
+      display: flex;
+      align-items: center;
+    }
+    li:hover {
+      color: #fff;
+      font-size: fontSize(16px);
+    }
+  }
+}
+
+.change-password {
+  .modal-content {
+    .modal-header {
+      background: #fff;
+      border-radius: 4px 4px 0px 0px;
+      padding: 20px 16px;
+      .modal-title {
+        font-size: fontSize(20px);
+        line-height: 28px;
+        color: #fff;
+        font-weight: 700;
+      }
+      .close {
+        opacity: 1;
+        text-shadow: none;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+    .btn {
+      width: 100px;
+    }
+    .popup-password {
+      background-color: #fff !important;
+      padding: 20px;
+      .model_password_input {
+        padding: 0 20px 20px 20px;
+        background: #fff;
+        border-radius: 4px;
+        .normal-input {
+          margin-top: 0;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.loaderBox {
+  background-color: crimson;
+  position: fixed;
+  width: 100%;
+  max-width: 200px;
+  right: calc(100% - 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loaderText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

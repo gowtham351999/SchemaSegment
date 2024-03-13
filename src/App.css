@@ -1,0 +1,15 @@
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
+
+.postionContentBox{
+    padding-top: 0px;
+}
+.sideBarIcon{
+    font-size: 20px;
+}
+.sideBarIconNonHighlight {
+    font-size: 20px;
+    color: rgb(135, 136, 137);
+    transition: color 0.3s ease;
+}
