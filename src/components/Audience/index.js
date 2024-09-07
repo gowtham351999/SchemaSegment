@@ -30,6 +30,15 @@ const Audience = () => {
   const segmentName = useRef(null);
   const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
+
+  function triggerError() {
+    throw new Error('This is a test error!');
+  }
+  
+  // Call this function somewhere in your app
+  triggerError();
+  
+
   const openCanvas = () => {
     setToggle(true);
     dispatch(toggleHandler(false));
