@@ -57,19 +57,18 @@ const Audience = () => {
     setStoreSegment(updatedStore);
   }, [updatedStore]);
 
-  const handleSelectField = (selectedOption, value) => {
+  const handleSelectField = (value) => {
     setSelectField({
       ...selectField,
-      [value]: selectedOption,
+      [value]: value,
     });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(segmentName);
-    const extractedData = Object.keys(selectField).map((key) => {
+    const extractedData = Object.keys(selectField).length > 0 ? Object.keys(selectField).map((key) => {
       return { key: selectField[key].value, value: selectField[key].value };
-    });
+    }) : storeSegment;
     const datum = extractedData?.map((v) => v?.value);
     const frequencyMap = datum?.reduce((acc, curr) => {
       acc[curr] = (acc[curr] || 0) + 1;
@@ -172,8 +171,11 @@ const Audience = () => {
                           id={val?.value}
                           options={segmentOptions}
                           placeholder={val?.label}
-                          onChange={(selectedOptions) =>
-                            handleSelectField(selectedOptions, val?.value)
+                          onChange={(e, selectedOptions) =>{
+                            console.log(e, 'kl')
+                            handleSelectField(e?.value)
+                          }
+                            
                           }
                           styles={customStyles}
                         />
