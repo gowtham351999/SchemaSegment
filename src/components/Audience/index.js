@@ -32,7 +32,7 @@ const Audience = () => {
 
 
   function triggerError() {
-    throw new Error('This is a test error!');
+    throw new Error('This is a new test error!');
   }
   
   // Call this function somewhere in your app
